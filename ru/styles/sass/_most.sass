@@ -79,7 +79,7 @@ h2
 span.accent
   color: $accent
   font-weight: 700
-.btn
+.btn, .btn-offer
   display: block
   width: 3.1rem
   height: 0.8rem
@@ -105,6 +105,7 @@ span.accent
     width: 0.34rem
     height: 0.34rem
     background-image: url(../../img/but.png)
+    background-repeat: no-repeat
     background-size: contain
     margin-left: 0.2rem
   &.mar
@@ -113,6 +114,21 @@ span.accent
     text-align: center
     display: block
     width: 100%
+    margin-right: 0.6rem
+.btn-offer
+  position: relative
+  &:after
+    content: ''
+    width: 0.34rem
+    height: 0.34rem
+    background-image: url(../../img/but.png)
+    background-repeat: no-repeat
+    background-size: contain
+    margin-left: 0.2rem
+    position: absolute
+    top: 50%
+    right: .8rem
+    transform: translateY(-50%)
 .border__top
   width: 4.8rem
   position: absolute
@@ -153,3 +169,18 @@ span.accent
     width: 100%
 img
   width: 100%
+
+
+.pagination-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 0.2rem
+  .swiper-pagination-bullet
+    width: 0.18rem
+    height: 0.18rem
+    background-color: #fff
+    opacity: 1
+    margin: 0 3px
+    &-active
+      background-color: $accent

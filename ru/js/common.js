@@ -1,9 +1,9 @@
 // ========================>
 // slider for reviews
 // <=======================
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.reviews__slider', {
   pagination: {
-    el: '.sect7__pagination',
+    el: '.reviews__pagination',
     clickable: true,
   },
   // loop: true,
